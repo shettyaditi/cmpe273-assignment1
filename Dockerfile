@@ -4,5 +4,5 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 RUN pip install PyYAML
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+ENTRYPOINT ["python","app.py"]
+CMD ["app.py",arg]
