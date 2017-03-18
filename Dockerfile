@@ -3,5 +3,6 @@ MAINTAINER Your Name "aditi.shetty47@gmail.com"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
+RUN pip install PyYAML
 ENTRYPOINT ["python"]
 CMD ["app.py"]
